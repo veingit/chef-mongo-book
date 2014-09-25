@@ -10,5 +10,7 @@ end
 
 recipe "mongocook", "Installs and configures mongocook"
 recipe "mongocook::test", "add test"
+recipe "mongodb::user_management", "mg"
+
 
 depends "mongodb"
