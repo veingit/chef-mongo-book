@@ -1,3 +1,6 @@
+include_recipe "mongodb"
+include_recipe "mongodb::mongo_gem"
+
 ::Chef::Recipe.send(:include, MongoDB::OpsWorksHelper)
 
 replicaset_layer_slug_name = node['opsworks']['instance']['layers'].first

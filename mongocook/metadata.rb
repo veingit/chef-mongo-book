@@ -8,7 +8,6 @@ depends "mongodb"
 
 recipe "mongocook", "Installs and configures mongocook"
 recipe "mongocook::test", "add test"
-recipe "mongodb::user_management", "mg"
 
 %w{ ubuntu debian redhat centos fedora scientific }.each do |os|
   supports os
