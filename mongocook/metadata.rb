@@ -4,7 +4,11 @@ maintainer  "smflt"
 license     "Apache 2.0"
 version     "1.0.0"
 
-recipe "mongocook", "mongocook ins"
+%w{ ubuntu debian redhat centos fedora scientific }.each do |os|
+  supports os
+end
+
+recipe "mongocook", "Installs and configures mongocook"
 recipe "mongocook::test", "add test"
 
 depends "mongodb"
